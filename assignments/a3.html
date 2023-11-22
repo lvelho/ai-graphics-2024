@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<TITLE>Assignment 3</TITLE>
+<TITLE>Assignment 6</TITLE>
 </head>
+
 <body>
 
 <HR>
 
-<H1>ASSIGNMENT 3 - CNNs</H1>
+<H1>ASSIGNMENT 3 - Fit a Target Shape</H1>
 
-<p>In this assignment, we will design and train a Convolutional Neural Network (CNN). This time, you will be able to choose 1 of the 2 tasks described in the assignment notebook. The first option is an analysis task while the second option is an analysis-synthesis task.</p>
+<p>In this assignment, we will learn to deform an initial shape (e.g. sphere) to fit a target shape. Starting from a sphere mesh, we learn the offset to each vertex in the mesh such that the predicted mesh is closer to the target mesh at each optimization step.</p>
 
-<h3>The goals of this practice are the following:</h3>
+<p><strong>The goals of this practice are the following:</strong></p>
 
 <ul>
-  <li>Learn how to implement CNNs on practice.</li>
-  <li>Work with a dataset of samples of a distribution.</li>
-  <li>Train a data-based neural network model.</li>
-  <li>Evaluate the model performance, specially with respect to generalization.</li>
+  <li>Use different PyTorch3D mesh loss functions</li>
+  <li>Set up an optimization loop</li>
+  <li>Evaluate optimization results</li>
+  <li>Reason about advantages and limitations of the method</li>
 </ul>
 
-<p>Assignment 3 Notebook:
+<h3 id="instructions">Notebook:</h3>
 
-<a href="https://colab.research.google.com/github/lvelho/ai-graphics-2024/blob/main/assignments/notebooks/cnn.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+<p>Assignment 6 Notebook
+<a href="https://colab.research.google.com/github/lvelho/ai-graphics-2024/blob/main/assignments/notebooks/deforming_meshes.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
 
 <h3 id="submission">Submission:</h3>
 
-<p>The assignment is due on xxx 2024 at 11:59pm (EDT).</p>
+<p>The assignment is due on May 29th, 2024 at 11:59pm (EDT).</p>
 
-<h3 id="references-and-other-useful-contents">References and other useful contents:</h3>
+<h3 id="references">References:</h3>
+
 <ol>
-  <li>PyTorch Tutorial: <a href="https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html">Training a Classifier</a></li>
-  <li>PyTorch’s <a href="https://pytorch.org/docs/stable/generated/torch.nn.ConvTranspose2d.html">Documentation</a></li>
+  <li><a href="https://pytorch3d.org">PyTorch3d website</a></li>
+  <li>PyTorch3D <a href="https://github.com/facebookresearch/pytorch3d/blob/master/pytorch3d/structures/meshes.py">source code for Meshes</a> data structure.</li>
+  <li><a href="https://arxiv.org/abs/1804.01654">Pixel2Mesh: Generating 3D Mesh Models from Single RGB Images</a></li>
+  <li><a href="https://arxiv.org/abs/1906.02739">Mesh R-CNN</a></li>
 </ol>
 
 <HR>
